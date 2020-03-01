@@ -55,8 +55,11 @@ def league(request):
 def leagueView(request, pk):
     league = League.objects.get(id=pk)
 
+    participants = league.leagueparticipant_set.all()
+
     context = {
         'league':league,
+        'participants':participants,
     }
     return render(request, 'thornament/league_view.html', context)
 

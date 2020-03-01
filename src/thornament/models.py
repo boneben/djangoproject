@@ -40,11 +40,11 @@ class League(models.Model):
 
     
 class LeagueParticipant(models.Model):
-    participant_name    = models.CharField(max_length=200, null=True),
-    participant_win     = models.IntegerField(null=True),
-    participant_loss    = models.IntegerField(null=True),
-    participant_ot      = models.IntegerField(null=True),
-    Participant_point   = models.IntegerField(null=True),
+    participant_name    = models.CharField(max_length=200, null=True)
+    participant_win     = models.IntegerField(null=True)
+    participant_loss    = models.IntegerField(null=True)
+    participant_ot      = models.IntegerField(null=True)
+    Participant_point   = models.IntegerField(null=True)
     owner               = models.ForeignKey(League, null=True , on_delete= models.SET_NULL)
 
     def __str__(self):
@@ -52,11 +52,11 @@ class LeagueParticipant(models.Model):
 
 
 class TournamentParticipant(models.Model):
-    participant_name    = models.CharField(max_length=200, null=True),
-    participant_win     = models.IntegerField(null=True),
-    participant_loss    = models.IntegerField(null=True),
-    participant_ot      = models.IntegerField(null=True),
-    Participant_point   = models.IntegerField(null=True),
+    participant_name    = models.CharField(max_length=200, null=True)
+    participant_win     = models.IntegerField(null=True)
+    participant_loss    = models.IntegerField(null=True)
+    participant_ot      = models.IntegerField(null=True)
+    Participant_point   = models.IntegerField(null=True)
     owner               = models.ForeignKey(Tournament, null=True , on_delete= models.SET_NULL)
 
     def __str__(self):

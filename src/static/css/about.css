@@ -1,0 +1,89 @@
+#about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  color: #eeeeee;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about .about-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about .about-wrapper hr {
+  width: 50%;
+  -webkit-box-shadow: 0px 0px 5px #09090a, 1px 1px 2px #09090a;
+          box-shadow: 0px 0px 5px #09090a, 1px 1px 2px #09090a;
+}
+
+#about .about-wrapper .about-container {
+  max-width: 900px;
+  margin-top: 100px;
+  padding: 10px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about .about-wrapper .about-container h6 {
+  margin-top: 30px;
+  line-height: 2;
+}
+
+#about .about-wrapper .about-container .features {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#about .about-wrapper .about-container .features .feature {
+  max-width: 300px;
+  padding: 20px;
+}
+
+#about .about-wrapper .about-container .features .feature span .fas {
+  font-size: 30px;
+  color: #1d91da;
+}
+
+#about .about-wrapper .about-container .features .feature h5 {
+  margin-top: 15px;
+  color: #ffc400;
+}
+
+#about .about-wrapper .about-container .features .feature h6 {
+  margin-top: 10px;
+}
+/*# sourceMappingURL=about.css.map */

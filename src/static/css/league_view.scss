@@ -1,0 +1,18 @@
+
+
+
+#league_view {
+    margin-top: 150px;
+    display: flex;
+    width: 100%;
+    
+    .league-view-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+        .league-view-container {
+            display: flex;
+        }
+    }
+}

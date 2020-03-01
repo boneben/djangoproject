@@ -1,0 +1,32 @@
+{% extends 'thornament/base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+
+<div id="league_view">
+    <div class="league-view-wrapper">
+        <div class="leage-view-container">
+
+            <div class="card">
+                <div class="card-body">
+                    <table class="table table-sm">
+                        <h5>{{league.league_name}}</h5>
+                        <tr>
+                            <th>Team/Participant</th>
+                            <th>W</th>
+                            <th>L</th>
+                            <th>OT</th>
+                            <th>P</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

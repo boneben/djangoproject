@@ -1,0 +1,194 @@
+.my-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  color: #eeeeee;
+}
+
+.my-page .mypage-wrapper {
+  margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.my-page .mypage-wrapper hr {
+  width: 50%;
+  -webkit-box-shadow: 0px 0px 5px #09090a, 1px 1px 2px #09090a;
+          box-shadow: 0px 0px 5px #09090a, 1px 1px 2px #09090a;
+}
+
+.my-page .mypage-wrapper .mypage-container {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.my-page .mypage-wrapper .mypage-container .nav {
+  width: auto;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+  border-bottom: 2px solid #09090a;
+}
+
+.my-page .mypage-wrapper .mypage-container .nav .nav-link {
+  color: #eeeeee;
+}
+
+.my-page .mypage-wrapper .mypage-container .nav .active {
+  background-color: #2e3036;
+  border: none;
+  color: #eeeeee;
+  font-weight: bold;
+  -webkit-box-shadow: 0px 0px 5px #09090a, 1px 1px 2px #09090a;
+          box-shadow: 0px 0px 5px #09090a, 1px 1px 2px #09090a;
+}
+
+.my-page .mypage-wrapper .mypage-container .tab-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0px 0px 5px #09090a, 1px 1px 2px #09090a;
+          box-shadow: 0px 0px 5px #09090a, 1px 1px 2px #09090a;
+  min-height: 500px;
+}
+
+.my-page .mypage-wrapper .mypage-container .tab-content #tournament {
+  display: none;
+}
+
+.my-page .mypage-wrapper .mypage-container .tab-content #league {
+  display: none;
+}
+
+.my-page .mypage-wrapper .mypage-container .tab-content .tab-pane {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.my-page .mypage-wrapper .mypage-container .tab-content .tab-pane #form_inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.my-page .mypage-wrapper .mypage-container .tab-content .tab-pane #form_inputs .form-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  width: 80%;
+  margin-top: 5px;
+}
+
+.my-page .mypage-wrapper .mypage-container .tab-content .tab-pane #form_inputs .form-input label {
+  font-weight: bold;
+}
+
+.my-page .mypage-wrapper .mypage-container .tab-content .tab-pane #form_inputs .form-input input[type=text], .my-page .mypage-wrapper .mypage-container .tab-content .tab-pane #form_inputs .form-input input[type=password], .my-page .mypage-wrapper .mypage-container .tab-content .tab-pane #form_inputs .form-input input[type=email] {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #f0eeee;
+  color: #f0eeee;
+  padding: 5px;
+  -webkit-transition: border 0.5s;
+  transition: border 0.5s;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
+}
+
+.my-page .mypage-wrapper .mypage-container .tab-content .tab-pane #form_inputs .form-input input[type=submit] {
+  border: none;
+  border-radius: 2px;
+  width: 100px;
+  padding: 10px;
+  font-weight: bold;
+  background-color: #1d91da;
+  color: #f0eeee;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.my-page .mypage-wrapper .mypage-container .tab-content .tab-pane #form_inputs .form-input input[type=submit]:hover {
+  background-color: lightskyblue;
+}
+
+.my-page .mypage-wrapper .mypage-container .tab-content .tab-pane ul {
+  list-style: none;
+}
+
+.my-page .mypage-wrapper .mypage-container .tab-content .tab-pane ul li {
+  color: #f10000;
+  font-weight: bold;
+}
+
+.my-page .mypage-wrapper .mypage-container .tab-content .tab-pane #message {
+  color: #f10000;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 900px) {
+  .my-page .mypage-wrapper .mypage-container {
+    width: auto;
+  }
+}
+/*# sourceMappingURL=mypage.css.map */

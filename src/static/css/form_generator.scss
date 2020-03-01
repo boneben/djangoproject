@@ -1,0 +1,214 @@
+
+.tournament-generate {
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: rgb(238, 238, 238);
+
+    .generate-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .btn {
+            margin-top: 20px;
+            background-color: rgb(29, 145, 218);
+            border-color: rgb(29, 145, 218);
+            width: 100px;
+
+            &:hover {
+                background-color: lightskyblue;
+            }
+        }
+    }
+
+    .tournament-wrapper {
+        position: relative;
+        height: 600px;
+        width: 1000px;
+        box-shadow: 0px 0px 5px rgb(9, 9, 10), 1px 1px 2px rgb(9, 9, 10);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+
+        hr {
+            width: 50%;
+            border-color: rgb(238, 238, 238);
+            margin-bottom: 40px;
+        }
+
+        .tournament-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 20px;
+
+                .tournament-input {
+                    box-shadow: 0px 0px 5px rgb(9, 9, 10), 1px 1px 2px rgb(9, 9, 10);
+                    border-radius: 3px;
+                    padding: 10px;
+                    margin: 10px;
+                    font-weight: bold;
+                    
+                    input[type=text], select {
+                        background: transparent;
+                        border: none;
+                        border-bottom: 1px solid rgb(240, 238, 238);
+                        color: rgb(240, 238, 238);
+                        padding: 5px;
+                        transition: border 0.5s;
+                        outline: none;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        .form-buttons {
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+            .create-button {
+            
+                .btn {
+                    background-color: rgb(29, 145, 218);
+                    border-color: rgb(29, 145, 218);
+                    width: 100px;
+    
+                    &:hover {
+                        background-color: lightskyblue;
+                    }
+                }
+            }
+
+            .cancel-button {
+
+                .btn {
+                    background-color: rgb(196, 4, 4);
+                    border-color: rgb(196, 4, 4);
+                    width: 100px;
+    
+                    &:hover {
+                        background-color: lightcoral;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tournament-search {
+    display: flex;
+    width: 100%;
+    color: rgb(238, 238, 238);
+
+    .tournament-search-wrapper{
+        display: flex;
+        width: 100%;
+
+        .tournament-search-container {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+    
+            .search {
+                width: 75%;
+                margin: 60px 0 30px 20px;
+    
+                input {
+                    margin-top: 10px;
+                    padding-left: 5px;
+                    width: 300px;
+                    border: none;
+                    background: transparent;
+                    border-bottom: 2px solid rgb(238, 238, 238);
+                    color: rgb(238, 238, 238);
+                    
+    
+                    &::placeholder {
+                        color: rgb(238, 238, 238);
+                       
+                    }
+                }
+            }
+    
+            .card-container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+    
+                .card {
+                    margin: 20px;
+                    width: auto !important;
+                    max-width: 350px;
+                    box-shadow: 0px 0px 5px rgb(9, 9, 10), 1px 1px 2px rgb(9, 9, 10);
+    
+                    .card-body {
+                        justify-content: flex-start;
+                        text-align: start;
+
+                        .card-btn {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            
+                            .btn {
+                                background-color: rgb(29, 145, 218);
+                                border-color: rgb(29, 145, 218);
+                                width: 150px;
+        
+                                &:hover {
+                                    background-color: lightskyblue;
+                                }
+                            }
+                        }
+                    }
+                }
+    
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .tournament-wrapper {
+        box-shadow: none !important;
+    }
+
+    .tournament-search {
+
+        .tournament-search-wrapper {
+
+            .tournament-search-container {
+
+                .search {
+                    margin: 60px 0 30px 0;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+            
+                    h5 {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+}

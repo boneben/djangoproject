@@ -1,0 +1,82 @@
+{% extends 'thornament/base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+
+<div class="jumbotron">
+    <div class="jumbo-container">
+        <h1>Welcome to <span>ChampMonkey!</span></h1>
+        <h4>The site that helps you create and manage your leagues and tournaments with ease, for free!</h4>
+        <h5>Login or register to get started!</h5>
+        <div class="jumbo-buttons">
+            <a class="btn btn-primary btn-lg" href="/login" role="button">Login</a>
+            <a class="btn btn-primary btn-lg" href="/register" role="button">Register</a>
+        </div>
+    </div>
+</div>
+
+<div class="main">
+  <div class="main-container">
+
+    <div class="tournament-container card-body">
+      <h2>TOURNAMENTS</h2>
+      <hr>
+      <div class="search">
+        <h5>Looking for a specific tournament?</h5>
+        <input type="search" placeholder="Search here...">
+      </div>
+        <div class="card-container card-body">
+
+          {% for i in tournaments %}
+          <div class="card text-white bg-dark mb-3" style="width: 20rem;">
+            <img src="/static/images/carousel_pic1.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">{{i.tournament_name}}</h5>
+              <p class="card-text">Type: {{i.tournament_type}}</p>
+              <p class="card-text">Teams/Participants: {{i.tournament_teams}}</p>
+              <div class="card-btn">
+                <a href="#" class="btn btn-primary">View</a>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+
+        </div>
+    </div>
+
+
+    <div class="league-container card-body">
+      <h2>LEAGUES</h2>
+      <hr>
+      <div class="search">
+        <h5>Looking for a specific league?</h5>
+        <input type="search" placeholder="Search here...">
+      </div>
+
+        <div class="card-container card-body">
+
+          {% for i in leagues %}
+          <div class="card text-white bg-dark mb-3" style="width: 20rem;">
+            <img src="/static/images/carousel_pic1.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">{{i.league_name}}</h5>
+              <p class="card-text">Teams/Participants: {{i.league_teams}}</p>
+              <div class="card-btn">
+                <a href="#" class="btn btn-primary">View</a>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+
+        </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+{% endblock %}

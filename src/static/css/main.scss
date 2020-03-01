@@ -1,0 +1,141 @@
+html, body {
+    margin: 0 !important; //overwrite bootstrap
+    padding: 0 !important; //overwrite bootstrap
+    background-color: rgb(46, 48, 54) !important; //overwrite bootstrap
+    height: 100vh;
+}
+
+#main_container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .navbar-wrapper {
+        .navbar {
+            position: fixed;
+            width: 100%;
+            opacity: 0.8;
+    
+            .navbar-brand {
+                color: rgb(255, 196, 0);
+                text-decoration: underline;
+    
+                &:hover {
+                    color: rgb(255, 214, 78);
+                }
+            }
+    
+            #navbarNav {
+    
+                .right {
+                    width: 100%;
+                    justify-content: flex-end;
+    
+                    a {
+                        color: rgb(29, 145, 218);
+                        font-weight: bold;
+                        font-size: 17px;
+    
+                        &:hover {
+                            color: lightskyblue;
+                            text-decoration: underline;
+                        }
+                    }
+    
+                    #logoutUser {
+                        color: rgb(255, 196, 0);
+    
+                        &:hover {
+                            color: rgb(255, 214, 78);
+                            text-decoration: underline;
+                        }
+                    }
+                }
+    
+                .left {
+                    margin-left: 20px;
+                    width: 90%;
+    
+                    a {
+                        color: rgb(29, 145, 218);
+                        font-weight: bold;
+                        font-size: 17px;
+    
+                        &:hover {
+                            color: lightskyblue;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    
+    #page_content{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        border-top: 2px solid rgb(255, 196, 0);
+        margin-top: 20px;
+        color: rgb(238, 238, 238);
+        background-color: rgb(33, 33, 37);
+    
+        .brand {
+            color: rgb(255, 196, 0);
+            text-decoration: underline;
+            margin-left: 60px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-evenly;
+    
+            .section {
+    
+                h5 {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+// MEDIA QUERIES
+
+@media only screen and (max-width: 991px) {
+
+    #navbarNav {
+
+        .left {
+            margin-left: 0 !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 859px) {
+    .footer {
+        .brand {
+            margin-left: 0 !important;
+            text-align: center;
+        }
+    }
+}

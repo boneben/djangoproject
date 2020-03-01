@@ -1,0 +1,287 @@
+.tournament-generate {
+  margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  color: #eeeeee;
+}
+
+.tournament-generate .generate-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tournament-generate .generate-button .btn {
+  margin-top: 20px;
+  background-color: #1d91da;
+  border-color: #1d91da;
+  width: 100px;
+}
+
+.tournament-generate .generate-button .btn:hover {
+  background-color: lightskyblue;
+}
+
+.tournament-generate .tournament-wrapper {
+  position: relative;
+  height: 600px;
+  width: 1000px;
+  -webkit-box-shadow: 0px 0px 5px #09090a, 1px 1px 2px #09090a;
+          box-shadow: 0px 0px 5px #09090a, 1px 1px 2px #09090a;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tournament-generate .tournament-wrapper hr {
+  width: 50%;
+  border-color: #eeeeee;
+  margin-bottom: 40px;
+}
+
+.tournament-generate .tournament-wrapper .tournament-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tournament-generate .tournament-wrapper .tournament-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+
+.tournament-generate .tournament-wrapper .tournament-container form .tournament-input {
+  -webkit-box-shadow: 0px 0px 5px #09090a, 1px 1px 2px #09090a;
+          box-shadow: 0px 0px 5px #09090a, 1px 1px 2px #09090a;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.tournament-generate .tournament-wrapper .tournament-container form .tournament-input input[type=text], .tournament-generate .tournament-wrapper .tournament-container form .tournament-input select {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #f0eeee;
+  color: #f0eeee;
+  padding: 5px;
+  -webkit-transition: border 0.5s;
+  transition: border 0.5s;
+  outline: none;
+  font-size: 16px;
+}
+
+.tournament-generate .tournament-wrapper .form-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.tournament-generate .tournament-wrapper .form-buttons .create-button .btn {
+  background-color: #1d91da;
+  border-color: #1d91da;
+  width: 100px;
+}
+
+.tournament-generate .tournament-wrapper .form-buttons .create-button .btn:hover {
+  background-color: lightskyblue;
+}
+
+.tournament-generate .tournament-wrapper .form-buttons .cancel-button .btn {
+  background-color: #c40404;
+  border-color: #c40404;
+  width: 100px;
+}
+
+.tournament-generate .tournament-wrapper .form-buttons .cancel-button .btn:hover {
+  background-color: lightcoral;
+}
+
+.tournament-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  color: #eeeeee;
+}
+
+.tournament-search .tournament-search-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.tournament-search .tournament-search-wrapper .tournament-search-container {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.tournament-search .tournament-search-wrapper .tournament-search-container .search {
+  width: 75%;
+  margin: 60px 0 30px 20px;
+}
+
+.tournament-search .tournament-search-wrapper .tournament-search-container .search input {
+  margin-top: 10px;
+  padding-left: 5px;
+  width: 300px;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid #eeeeee;
+  color: #eeeeee;
+}
+
+.tournament-search .tournament-search-wrapper .tournament-search-container .search input::-webkit-input-placeholder {
+  color: #eeeeee;
+}
+
+.tournament-search .tournament-search-wrapper .tournament-search-container .search input:-ms-input-placeholder {
+  color: #eeeeee;
+}
+
+.tournament-search .tournament-search-wrapper .tournament-search-container .search input::-ms-input-placeholder {
+  color: #eeeeee;
+}
+
+.tournament-search .tournament-search-wrapper .tournament-search-container .search input::placeholder {
+  color: #eeeeee;
+}
+
+.tournament-search .tournament-search-wrapper .tournament-search-container .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tournament-search .tournament-search-wrapper .tournament-search-container .card-container .card {
+  margin: 20px;
+  width: auto !important;
+  max-width: 350px;
+  -webkit-box-shadow: 0px 0px 5px #09090a, 1px 1px 2px #09090a;
+          box-shadow: 0px 0px 5px #09090a, 1px 1px 2px #09090a;
+}
+
+.tournament-search .tournament-search-wrapper .tournament-search-container .card-container .card .card-body {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: start;
+}
+
+.tournament-search .tournament-search-wrapper .tournament-search-container .card-container .card .card-body .card-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tournament-search .tournament-search-wrapper .tournament-search-container .card-container .card .card-body .card-btn .btn {
+  background-color: #1d91da;
+  border-color: #1d91da;
+  width: 150px;
+}
+
+.tournament-search .tournament-search-wrapper .tournament-search-container .card-container .card .card-body .card-btn .btn:hover {
+  background-color: lightskyblue;
+}
+
+@media only screen and (max-width: 1024px) {
+  .tournament-wrapper {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+  }
+  .tournament-search .tournament-search-wrapper .tournament-search-container .search {
+    margin: 60px 0 30px 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tournament-search .tournament-search-wrapper .tournament-search-container .search h5 {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=form_generator.css.map */

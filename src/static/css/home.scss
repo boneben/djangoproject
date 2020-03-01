@@ -1,0 +1,181 @@
+.jumbotron {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: url('/static/images/home_jumbotron.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 600px;
+    width: 100%;
+    border-bottom: 2px solid rgb(255, 196, 0);
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0; right: 0;
+        top: 0; bottom: 0;
+        background: rgba(0,0,0,.2);
+    }
+
+    .jumbo-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(238, 238, 238);
+
+        h1 span {
+            color: rgb(255, 196, 0);
+        }
+
+        .jumbo-buttons {
+
+            .btn {
+                background-color: rgb(29, 145, 218);
+                border-color: rgb(29, 145, 218);
+                margin: 5px;
+                margin-top: 40px;
+
+                &:hover {
+                    color: lightskyblue;
+                }
+            }
+        }
+    }
+
+}
+
+.main {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    color: rgb(238, 238, 238);
+
+    .main-container {
+        width: 100%;
+        text-align: center;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .tournament-container, .league-container {
+            width: auto;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 3px;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        hr {
+            width: 100%;
+            box-shadow: 0px 0px 5px rgb(9, 9, 10), 1px 1px 2px rgb(9, 9, 10);
+        }
+
+        .search {
+            display: flex;
+            flex-direction: column;
+            margin: 60px 0 30px 20px;
+            justify-content: flex-start;
+
+            h5 {
+                text-align: start;
+            }
+
+            input {
+                margin-top: 10px;
+                padding-left: 5px;
+                width: 300px;
+                border: none;
+                background: transparent;
+                border-bottom: 1px solid rgb(238, 238, 238);
+                color: rgb(238, 238, 238);
+                
+
+                &::placeholder {
+                    color: rgb(238, 238, 238);
+                   
+                }
+            }
+        }
+
+        .card-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .card {
+                margin: 20px;
+                width: auto !important;
+                max-width: 350px;
+                box-shadow: 0px 0px 5px rgb(9, 9, 10), 1px 1px 2px rgb(9, 9, 10);
+
+                .card-body {
+                    justify-content: flex-start;
+                    text-align: start;
+
+                    .card-btn {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+
+                        .btn {
+                            background-color: rgb(29, 145, 218);
+                            border-color: rgb(29, 145, 218);
+                            width: 150px;
+    
+                            &:hover {
+                                background-color: lightskyblue;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .tournament-container, .league-container {
+        padding: 0 !important;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .tournament-container, .league-container {
+        box-shadow: none !important;
+    }
+
+    .main {
+
+        .main-container {
+
+            .search {
+                margin: 60px 0 30px 0;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+        
+                h5 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+}

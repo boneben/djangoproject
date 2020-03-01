@@ -1,0 +1,39 @@
+{% extends 'thornament/base_form.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<div id="login_register_container">
+    <div id="form_wrapper">
+        <div id="form_container">
+            <h2>Login</h2>
+            <form method="POST" id="form_inputs">
+                {% csrf_token %}
+                <div class="form-input">
+                    <label>Username</label>
+                    <input type="text" name="username">
+                </div>
+                <div class="form-input">
+                    <label>Password</label>
+                    <input type="password" name="password">
+                </div>
+                <div class="form-input">
+                    <input type="submit">
+                </div>                  
+            </form>
+            <div class="link">
+                <p><a href="#">Reset password?</a></p>
+            </div>
+            {% for message in messages %}
+            <p id="message">{{ message }}</p>
+            {% endfor %}
+            <div class="link">
+                <p>Don't have an account? <a href="/register">Register here</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

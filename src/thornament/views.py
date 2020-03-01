@@ -67,8 +67,11 @@ def leagueView(request, pk):
 def tournamentView(request, pk):
     tournament = Tournament.objects.get(id=pk)
 
+    participants = tournament.tournamentparticipant_set.all()
+
     context = {
         'tournament':tournament,
+        'participants':participants,
     }
     return render(request, 'thornament/tournament_view.html', context)
 
